@@ -18,6 +18,7 @@
       }
       img {
         border: 0;
+        object-fit: cover;
       }
       .container {
         width: 100%;
@@ -27,6 +28,7 @@
       }
       .main {
         /* align center */
+        
         margin: 0 auto;
         width: 100%;
         max-width: 600px;
@@ -35,7 +37,57 @@
         font-family: sans-serif;
         color: #4a4a4a;
       }
+      .two-column {
+        font-size: 0;
+        padding: 35px 0 40px;
+      }
+      .two-column .single-column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        
+      }
+      .two-column .padding {
+        padding: 20px;
+      }
+      .two-column .content {
+        font-size: 15px;
+        text-align: left;
+        line-height: 20px;
+        word-spacing: 0.7px;
+        letter-spacing: 0.25px;
+        
+      }
+      .button {
+        background-color: #21c6b8;
+        color: #544e4e;
+        text-decoration: none;
+        padding: 12px 39px;
+        align-self: center;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 0.65px;
+        transition: all 0.5s ease-in-out;
+      }
+      .button:hover {
+        background-color: #4b4848;
+        color: #21c6b8;
+      }
+      .two-column .last {
+        padding: 0 !important;
+      }
       @media screen and (max-width: 600px) {
+       .two-column .padding {
+        padding-right: 0!important;;
+        padding-left: 0!important;;
+      }
+       .two-column .content img{
+      width: 300px!important;
+      max-width: 300px!important;
+        
+      }
       }
     </style>
   </head>
@@ -105,34 +157,197 @@
           </td>
         </tr>
         <!-- banner-img -->
-   <tr>
+        <tr>
           <td>
-           <a href="#"><img src="./images/banner.jpg" alt="banner" style="max-width: 100%;" width="600px" ></a>
+            <a href="#"
+              ><img
+                src="./images/banner.jpg"
+                alt="banner"
+                style="max-width: 100%"
+                width="600px"
+            /></a>
           </td>
         </tr>
         <!-- two column layout -->
-<tr>
-    <td>
-        <table width="100%">
-<tr>
-    <td class="two-column">
-<table class="single-column">
-    <tr>
-        <td class="padding">
-
-
-        </td>
-    </tr>
-</table>
-
-    </td>
-</tr>
-        </table>
-    </td>
-</tr>
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-column">
+                  <table class="single-column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="./images/girl.webp"
+                                  alt="girl with an umbrella"
+                                  width="260px"
+                                  height="200px"
+                                  style="max-width: 260px; border-radius: 10px"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p style="font-size: 18px; font-weight: bold">
+                                A Responsive Email
+                              </p>
+                              <p
+                                style="
+                                  text-transform: capitalize;
+                                  padding-bottom: 15px;
+                                "
+                              >
+                                a representation of a Responsive email design
+                                from single-column layout to two column layout
+                              </p>
+                              <a href="#" class="button">HTML Email</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="single-column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="./images/deer.webp"
+                                  alt="a deer in a jungle"
+                                  width="260px"
+                                  height="200px"
+                                  style="max-width: 260px; border-radius: 10px"
+                              /></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px">
+                              <p style="font-size: 18px; font-weight: bold">
+                                Custom design layout
+                              </p>
+                              <p
+                                style="
+                                  text-transform: capitalize;
+                                  padding-bottom: 15px;
+                                "
+                              >
+                                a representation of a Responsive email design
+                                from single-column layout to two column layout
+                              </p>
+                              <a href="#" class="button">Build From Scratch</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
         <!-- email logo -->
+        <tr>
+          <td
+            style="
+              background-color: #eaf6fb;
+              border-top: 3px solid #21c6b8;
+              border-bottom: 3px solid rgb(33, 198, 184);
+            "
+          >
+            <table width="100%">
+              <tr>
+                <td class="two-column last">
+                  <table class="single-column">
+                    <tr>
+                      <td>
+                        <a href="#"
+                          ><img
+                            src="./images/email-1.jpg"
+                            width="300"
+                            style="max-width: 300px"
+                            alt="contact"
+                        /></a>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="single-column">
+                    <tr>
+                      <td>
+                        <a href="#"
+                          ><img
+                            src="./images/email-2.jpg"
+                            width="300"
+                            style="max-width: 300px"
+                            alt="contact"
+                        /></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
         <!-- footer -->
+        <tr>
+          <td
+            style="
+              background-color: #565665;
+
+              border-bottom: 3px solid rgb(33, 198, 184);
+            "
+          >
+            <table width="100%">
+              <tr>
+                <td style="padding: 50px 20px; text-align: center; color: #fff">
+                  <a href="#"
+                    ><img
+                      src="./images/html-email-white.png"
+                      width="230"
+                      alt=""
+                  /></a>
+                  <p>Custom HTML Email</p>
+                  <p>
+                    <a
+                      style="text-decoration: none; color: rgb(182, 178, 178)"
+                      href="https://raman1.netlify.app/index.html"
+                    >
+                      Click Here To Visit My web page
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      style="text-decoration: none; color: rgb(182, 178, 178)"
+                      href="mailto:ramandeepgill5176@gmail.com"
+                    >
+                      Ramandeepgill5176@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      style="text-decoration: none; color: rgb(182, 178, 178)"
+                      href="#"
+                    >
+                      UNSUBSCRIBE From The List
+                    </a>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- end of footer -->
       </table>
     </div>
   </body>
